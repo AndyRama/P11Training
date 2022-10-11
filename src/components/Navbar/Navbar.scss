@@ -1,0 +1,55 @@
+.header {
+  height: 120px;
+  width: 100%;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: white;
+  padding: 10px 48px;
+
+
+  img {
+    height: 80px;
+    width: auto;
+    margin: 15px 20px;
+    padding: 14px;
+  }
+}
+
+.nav-Nav-Btn-Wrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.Home-page {  
+  list-style: none;
+  margin: 0 32px;
+  color: #FF6060;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 40px;
+  text-decoration: none;
+  position: absolute;
+  top: 1%;
+  right: 10%;
+}
+
+.About-page {
+
+  list-style: none;
+  margin: 0 32px;
+  color: #FF6060;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 40px;
+  text-decoration: none;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  
+  
+
+}
