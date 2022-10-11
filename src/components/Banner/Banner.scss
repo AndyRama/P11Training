@@ -1,0 +1,18 @@
+.banner {
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 171px;
+  border-radius: 25px;
+
+  &__overlay {
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+  }
+
+  img {
+    border-radius: 25px;
+  }
+}
