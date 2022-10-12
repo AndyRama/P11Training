@@ -1,0 +1,19 @@
+.list-item {
+  width: 85%;
+  background-color: #FF6060;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 16px;
+  border-radius: 5px;
+  padding: 0 24px;
+  height: 48px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.icon-wrapper {
+  top: 42%;
+  position: absolute;
+  right: 8%;
+
+}
