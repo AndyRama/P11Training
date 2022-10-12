@@ -1,12 +1,12 @@
 import './Home.scss'
 import Banner from "../../components/Banner/Banner"
+import ImageBanner from "./../../assets/images/BannerHome.png"
 
 function Home() {
   return (
-<section>
-  <Banner/>
-    <h1>test de andy</h1>
-</section>
+    <section>
+      <Banner image={ ImageBanner } text="Chez vous, partout et ailleurs"/>
+    </section>
   );
 }
 
