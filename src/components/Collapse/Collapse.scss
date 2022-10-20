@@ -1,29 +1,37 @@
 .list-item {
-  width: 85%;
-  background-color: #FF6060;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 16px;
-  border-radius: 5px;
-  padding: 0 24px;
-  height: 48px;
-  justify-content: space-between;
-  text-decoration: none;
   width: 90%;
+  height: 48px;
+  background-color: #FF6060;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-top: 20px;
+  
+  p {
+    margin: auto 0;
+    color:  white;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
 }
 
 .icon-wrapper {
-  position: relative;
-  top: 30%;
-  right: 0%;
+  margin: auto 0;
+  cursor: pointer;
+  height: auto;
+  width: auto;
 }
 
 .list-wrapper {
   list-style: none;
   display: block;
+  padding: 0;
   margin-bottom: 88px;
   width: 80%;
   position: relative;
+  // top: -30px;
   left: 10%;
 
   li {
@@ -34,14 +42,49 @@
 .collapsed-text {
   height: 0;
   width: 90%;
-  height:auto;
-  margin:0 auto;
-  color: #ff6060;
-  background-color: #f7f7f7;
+  height: auto;
+  margin: 0 auto  ;
+  color: #FF6060;
+  background-color: #F7F7F7;
   padding: 23px;
   border-radius: 5px;
 
   p {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 992px){
+  .list-item {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list-item {
+    height: 30px!important;
+    
+    p {
+      font-size: 15px!important;
+    }
+  }
+
+  .collapsed-text p {
+    font-size: 15px;
+  } 
+
+  .icon-wrapper svg {
+    height: 15px!important;
+    width: 14px!important;
+  }
+
+  .list-wrapper {
+    width: 100%;
+    top: -16px;
+    left: 0;
+  }
+}
+
+.reverse {
+  transform:rotate(180deg) ;
 }
