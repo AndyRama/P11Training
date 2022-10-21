@@ -10,7 +10,7 @@ function Navbar() {
   return(
 
     <header className="header">
-      <nav className="Navbar">
+      <nav className="navbar">
         <img src={Logo} alt="Logo entreprise kasa"/>
 
         <div className="Nav-Btn-Wrapper">

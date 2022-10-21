@@ -3,7 +3,7 @@ import ChevronIcon from "components/Icons/Chevron";
 
 import "./Collapse.scss"
 
-function Collapse(props){
+function Collapse(props) {
 
   const [open, setOpen] = useState(false);
   const toggle = () => {
@@ -18,8 +18,8 @@ function Collapse(props){
           < ChevronIcon/>
         </div>
       </div>
-      {open &&( 
-        <div className="Collapsed-text">
+      {open && ( 
+        <div className="collapsed-text">
           <p>{props.text}</p>
         </div>
       )}
