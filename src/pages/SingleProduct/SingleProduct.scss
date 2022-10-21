@@ -1,0 +1,7 @@
+.singleproduct {
+  margin: 0 3%;
+  
+  @media screen and (max-width: 650px) {
+    margin: 0 5%; 
+  }
+}
