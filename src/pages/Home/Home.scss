@@ -46,3 +46,19 @@
   top: 83%;
   bottom: 0;
 }
+
+@media screen and (max-width: 650px) {
+  .logements-wrapper {
+    background-color: white;
+    width: 96%;
+    padding: 0 0px;
+    margin-top: 0px!important;
+
+    .logements-box {
+      height: 255px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+

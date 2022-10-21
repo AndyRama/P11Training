@@ -5,6 +5,7 @@
   margin-top: 20px;
   height: 223px;
   left: 5%;
+  top: 0.7%;
   
   img {
     border-radius: 25px;
@@ -24,14 +25,68 @@
   }
 
   &__text {
+    color: white;
     position: absolute;
-    top: 20%;
-    left: 30%;
-    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
     font-size: 48px;
     display: flex;
-    align-items: flex-end ;
-    color: white;
+    font-weight: 500;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    margin: 0 0px;
+    
+    &.about {
+      height: 100%;
+    }
+    
+    h1 {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      font-size: 36px;
+      font-weight: normal;
+      margin-left: 8px;
+      width: 340px;
+    }
+
+    img {
+      border-radius:10px;
+    }
+  }  
+}
+
+@media screen and (max-width: 650px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+
+    &.about {
+      height: 223px;
+    }
+    
+    &__img {
+      height: 100%;
+  
+    }
+    
+    h1 {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      font-size: 24px;
+      font-weight: 500;
+      margin-left: 24px;
+      width: 222px;
+    }
+  }
 }
