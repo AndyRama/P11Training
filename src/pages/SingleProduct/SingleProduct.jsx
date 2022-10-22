@@ -37,22 +37,25 @@ function SingleProduct() {
     <section>
       <div className="singleproduct">
         <Slide Photos={pictures} />      
-          <div className="singleproduct__content">
-            <div className="group-elements-left">  
-              <div className="tags-list-wrapper">
-                {logement.tags.map((tag, index) => (
-                  <Tags key={index} getTag={Tags} />
-            
-                  ))}
-              </div>
-            </div>
-
-            <div className="singleproduct__collapse">
-              <Collapse title="description" text={description} />
-              <Collapse title="équipement" text={content} />
+        <div className="singleproduct__content">
+          <div className="group-elements-left">  
+            <h1 className='title'>{title}</h1>
+            <p className='location'>{location}</p>
+            <div className="tags-list-wrapper">
+              {logement.tags.map((tag, index) => (
+                <Tags key={index} getTag={Tags} />            
+              ))}
             </div>
           </div>
+          <div className="group-elements-right"> 
+                
+          </div> 
 
+          <div className="singleproduct__collapse">
+            <Collapse title="description" text={description} />
+            <Collapse title="équipement" text={content} />
+          </div>
+        </div>
       </div>
     </section>
   )
