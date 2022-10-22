@@ -1,0 +1,28 @@
+.tag {
+  background:  #ff6060;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  // display: flex;
+  // flex-direction: row;
+
+  @media screen and (max-width: 992px) {
+    // padding: 5px 14px;
+    border-radius: 10px;
+  }
+
+   @media screen and (max-width: 650px) {
+    border-radius: 10px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    
+    @media screen and (max-width: 650px) {
+      font-size: 10px !important;
+      font-weight: 500;
+    }
+  }
+}
