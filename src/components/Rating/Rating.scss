@@ -10,7 +10,21 @@
 .rate {
   float: right;
 
-  @media screen and (max-width:650px) {
+  @media screen and (max-width: 650px) {
     float: left;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  span svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  span svg {
+    width: 15px;
+    height: 15px;
   }
 }
