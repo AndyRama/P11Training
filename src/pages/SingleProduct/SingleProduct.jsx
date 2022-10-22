@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import Collapse from 'components/Collapse/Collapse'
 import Slide from 'components/Slide/Slide'
 import Tags from 'components/Tags/Tags'
-// import Rating from 'components/Rating/Rating'
+import Rating from 'components/Rating/Rating'
 // import 404 from 'components/404/404'
 
 function SingleProduct() {
@@ -48,7 +48,7 @@ function SingleProduct() {
             </div>
           </div>
           <div className="group-elements-right"> 
-                
+            <Rating key={rating} />  
           </div> 
 
           <div className="singleproduct__collapse">
