@@ -48,7 +48,7 @@ function SingleProduct() {
             </div>
           </div>
           <div className="group-elements-right"> 
-            <Rating key={rating} />  
+            <Rating rating = {rating} />  
           </div> 
 
           <div className="singleproduct__collapse">
