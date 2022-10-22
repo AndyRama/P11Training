@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-// import './SingleProduct.scss'
+import './SingleProduct.scss'
 
 import Collapse from 'components/Collapse/Collapse'
 import Slide from 'components/Slide/Slide'
@@ -47,15 +47,20 @@ function SingleProduct() {
               ))}
             </div>
           </div>
-          <div className="group-elements-right"> 
-            <Rating rating = {rating} />  
-          </div> 
 
-          <div className="singleproduct__collapse">
-            <Collapse title="description" text={description} />
-            <Collapse title="équipement" text={content} />
-          </div>
+          <div className="group-elements-right"> 
+            <div className="name-photo-wrapper">
+              <div className="host-name">{host.name}</div>
+              <img  className="host-photo" src={host.picture} alt={host.name} />
+            </div>
+            <Rating rating = {rating} />  
+          </div>     
         </div>
+      </div>
+
+      <div className="singleproduct__collapse">
+        <Collapse title="description" text={description} />
+        <Collapse title="équipement" text={content} />
       </div>
     </section>
   )

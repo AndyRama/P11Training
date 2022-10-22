@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  align-items: center;
+  
+  @media screen and (max-width:650px) {
+    height: 30px;
+  }
+}
+
+.rate {
+  float: right;
+
+  @media screen and (max-width:650px) {
+    float: left;
+  }
+}
